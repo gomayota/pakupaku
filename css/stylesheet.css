@@ -1,0 +1,156 @@
+body {
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  /*スマートフォン向け余白*/
+  padding: 0 4%;
+}
+.page_header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.logo {
+  width: 250px;
+  height: 70px;
+  margin-top: 14px;
+}
+.page_header ul {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.page_header li {
+  margin-left: 10px;
+}
+.menu-item {
+  font-size: 14px;
+  display: block;
+  width: 150px;
+  opacity: 0.7;
+  height: 50px;
+  line-height: 50px;
+  background-color: lightgray;
+  text-align: center;
+}
+.content-header {
+  height: 500px;
+  background-image: url(../img/pexels-markus-spiske-1268101.jpg);
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+}
+.intro-word {
+  font-weight: bold;
+  font-size: 20px;
+}
+.intro-word p {
+  padding-top: 70px;
+}
+.intro-pakupaku {
+  color: black;
+}
+.vege-pic {
+  width: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+}
+.intro-vege-list {
+  display: flex;
+}
+.intro-vege {
+  width: 80%;
+}
+.vege-item {
+  width: 220px;
+
+  margin-right: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.subject {
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 6px double #000;
+  padding-bottom: 0px;
+}
+.intro-vege h3 {
+  font-size: 14px;
+}
+/*受講者の声（スライダー）*/
+.swiper-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.swiper-image {
+  width: 100%;
+}
+.footer {
+  padding-top: 10px;
+  text-align: center;
+  height: 90px;
+}
+.menu-item:hover {
+  cursor: pointer;
+}
+
+/*レスポンシブ対応*/
+
+@media screen and (max-width: 1200px) {
+  /*野菜一覧*/
+  .intro-vege-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .vege-item {
+    width: 20%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /*野菜一覧*/
+  .intro-vege-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .vege-item {
+    width: 40%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*野菜一覧*/
+  .vege-item {
+    width: 70%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+  .page_header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .page_header ul {
+    margin: 0 auto;
+  }
+}
