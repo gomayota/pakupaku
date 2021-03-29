@@ -1,6 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
   line-height: 1.7;
 }
+/*↑リセット用CSS-ブラウザ間での差をなくすために使用*/
 a {
   text-decoration: none;
 }
@@ -15,51 +25,58 @@ img {
   padding: 0 4%;
 }
 .page_header {
-  height: 80px;
+  width: 100%;
+  padding: 20px 4% 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid gray;
-  padding-bottom: 10px;
-}
-
-.logo {
-  width: 250px;
-  height: 70px;
-  margin-top: 14px;
-}
-.page_header ul {
-  display: flex;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  margin-top: 34px;
-  list-style: none;
-}
-.page_header li {
-  margin-left: 10px;
-}
-.menu-item {
-  font-size: 14px;
-  display: block;
-  width: 150px;
-  opacity: 0.7;
-  height: 50px;
-  line-height: 50px;
-  background-color: lightgray;
+  position: fixed;
+  top: 0;
   text-align: center;
 }
+.page_header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+.page_header a {
+  text-decoration: none;
+  color: #4b4b4b;
+  font-weight: bold;
+}
+.menu-item {
+  opacity: 0.7;
+}
+.page_header ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+.page_header li {
+  margin: 0 0 0 15px;
+  font-size: 16px;
+}
+.page_header nav {
+  margin: 0 0 0 auto;
+}
+
 .content-header {
-  height: 500px;
+  padding-top: 50px;
+  height: 600px;
   background-image: url(../img/pexels-markus-spiske-1268101.jpg);
   background-repeat: none;
   background-size: cover;
   color: white;
+}
+.content-header h1 {
+  padding-top: 20px;
 }
 .intro-word {
   font-weight: bold;
   font-size: 20px;
 }
 .intro-word p {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .intro-pakupaku {
   color: black;
@@ -107,6 +124,7 @@ img {
 }
 .menu-item:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 /*レスポンシブ対応*/
@@ -146,11 +164,10 @@ img {
     margin-bottom: 10px;
   }
   .page_header {
-    flex-direction: column;
-    text-align: center;
     margin-bottom: 100px;
   }
   .page_header ul {
-    margin: 0 auto;
+    flex-direction: flex;
+    text-align: center;
   }
 }
