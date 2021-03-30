@@ -61,8 +61,7 @@ img {
 }
 
 .content-header {
-  padding-top: 50px;
-  height: 600px;
+  padding: 200px 0 200px 0;
   background-image: url(../img/pexels-markus-spiske-1268101.jpg);
   background-repeat: none;
   background-size: cover;
@@ -74,6 +73,7 @@ img {
 .intro-word {
   font-weight: bold;
   font-size: 20px;
+  padding-left: 30px;
 }
 .intro-word p {
   padding-top: 50px;
@@ -167,7 +167,7 @@ img {
     margin-bottom: 100px;
   }
   .page_header ul {
-    flex-direction: flex;
+    flex-direction: column;
     text-align: center;
   }
 }
