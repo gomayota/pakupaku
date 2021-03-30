@@ -154,6 +154,20 @@ img {
     height: 50%;
     margin-bottom: 10px;
   }
+  .content-header {
+    padding: 100px 0 100px 0;
+    background-size: cover;
+  }
+  .page_header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .page_header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -167,7 +181,21 @@ img {
     margin-bottom: 100px;
   }
   .page_header ul {
+    display: flex;
+    justify-content: center;
+  }
+  .content-header {
+    padding: 75px 0 75px 0;
+    background-size: cover;
+  }
+  .page_header {
     flex-direction: column;
     text-align: center;
+  }
+  .page_header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
   }
 }
