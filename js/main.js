@@ -7,7 +7,8 @@ var mySwiper = new Swiper('.swiper-container', {
 	},
 	navigation: {
 		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
+        prevEl: '.swiper-button-prev',
+        arrows: false
 	},
 	pagination: {
 		el: '.swiper-pagination',
