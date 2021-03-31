@@ -76,7 +76,8 @@ img {
   padding-left: 30px;
 }
 .intro-word p {
-  padding-top: 50px;
+  padding-top: 30px;
+  font-size: 16px;
 }
 .intro-pakupaku {
   color: black;
@@ -126,7 +127,12 @@ img {
   cursor: pointer;
   opacity: 1;
 }
-
+.swiper-button-next {
+  font-size: 10px;
+}
+.swiper-button-prev {
+  font-size: 10px;
+}
 /*レスポンシブ対応*/
 
 @media screen and (max-width: 1200px) {
@@ -162,7 +168,7 @@ img {
     flex-direction: column;
     text-align: center;
   }
-  .page_header ul {
+  nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,10 +198,13 @@ img {
     flex-direction: column;
     text-align: center;
   }
-  .page_header ul {
+  .menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+  }
+  .intro-word p {
+    font-size: 10px;
   }
 }
