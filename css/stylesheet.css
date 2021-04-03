@@ -89,12 +89,17 @@ img {
 }
 .intro-vege-list {
   display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
 }
 .intro-vege {
   width: 80%;
 }
 .vege-item {
-  width: 180px;
+  width: 200px;
+  height: 320px;
+  margin-bottom: 10px;
   margin-right: 20px;
   border-bottom: 1px solid gray;
 }
@@ -133,24 +138,6 @@ img {
 }
 /*レスポンシブ対応*/
 
-@media screen and (max-width: 1900px) {
-  /*野菜一覧*/
-  .intro-vege-list {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-  }
-  .vege-item {
-    width: 180px;
-    height: 320px;
-    margin-bottom: 10px;
-
-    /* width: 20%;
-    height: 50%;*/
-  }
-}
-
 @media screen and (max-width: 800px) {
   /*野菜一覧*/
   .intro-vege-list {
@@ -160,7 +147,7 @@ img {
     flex-wrap: wrap;
   }
   .vege-item {
-    width: 180px;
+    width: 200pxpx;
     height: 320px;
     margin-bottom: 10px;
   }
